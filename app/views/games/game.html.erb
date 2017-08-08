@@ -1,0 +1,11 @@
+<h1>Welcome to the game</h1>
+<p>Heres your grid</p>
+<p><%=@grid%></p>
+<form action="/score" method="get">
+<input type="hidden" name="start_time_query" value " <%= @start_time %>">
+  <input type="text" name="query" placeholder="Take your best guess">
+  <input type="hidden" name="grid_query" value " <%= @grid %>">
+  <button>Submit</button>
+</form>
+<span><%end_time = Time.now%></span>
+
